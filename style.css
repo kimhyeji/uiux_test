@@ -170,32 +170,6 @@ img {
 }
 
 /* 섹션 C 파트 시작 */
-.section-middle > .con {
-	height: 200px;
-}
-
-.section-middle .content {
-	width: calc(100% / 3);
-}
-
-.content-middle {
-	border: 2px solid blue;
-}
-
-.content-middle > a {
-	display: block;
-	height: 100%;
-}
-
-.content-right {
-	border: 2px solid blue;
-}
-
-.content-right > a {
-	display: block;
-	height: 100%;
-}
-
 /* 탭박스 */
 .tab-box .tab-head {
 	position: relative;
@@ -224,6 +198,7 @@ img {
 .tab-box .tab-body {
   border: 1px solid #000;
   transform: translateY(-1px);
+  padding: 10px;
 }
 
 .tab-box .tab-body > ul > li {
@@ -235,14 +210,17 @@ img {
   display: block;
 }
 
-.tab-box .tab-body > ul > li > .content {
+.tab-box .tab-body .content {
   height: 100%;
-  padding: 10px;
   width: 100%;
   box-sizing: border-box;
 }
 
-.tab-box .tab-body > ul > li > .content > ul > li > a {
+.tab-box .tab-body .notice-content > ul > li {
+    flex-grow: 1;
+}
+
+.tab-box .tab-body .notice-content > ul > li > a {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -256,4 +234,35 @@ img {
 .tab-box .tab-body > ul > li > .content > ul > li > a > span:first-child::before {
     content: "•";
     margin-right: 3px;
+}
+
+.tab-box .tab-body .gallary-content > ul {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-middle > .con {
+	height: 200px;
+}
+
+.section-middle .content {
+	width: calc(100% / 3);
+}
+
+.content-middle {
+	border: 2px solid blue;
+}
+
+.content-middle > a {
+	display: block;
+	height: 100%;
+}
+
+.content-right {
+	border: 2px solid blue;
+}
+
+.content-right > a {
+	display: block;
+	height: 100%;
 }
