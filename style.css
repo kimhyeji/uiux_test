@@ -229,7 +229,6 @@ img {
 .tab-box .tab-body > ul > li {
   display: none;
   height: 100%;
-  width: 100%;
 }
 
 .tab-box .tab-body > ul > li.active {
@@ -238,5 +237,23 @@ img {
 
 .tab-box .tab-body > ul > li > .content {
   height: 100%;
-  border: 1px solid red;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tab-box .tab-body > ul > li > .content > ul > li > a {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tab-box .tab-body > ul > li > .content > ul > li > a:hover {
+    text-decoration: underline;
+    color: rgb(172, 172, 172);
+}
+
+.tab-box .tab-body > ul > li > .content > ul > li > a > span:first-child::before {
+    content: "•";
+    margin-right: 3px;
 }
