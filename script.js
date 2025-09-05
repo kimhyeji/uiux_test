@@ -4,7 +4,7 @@ setInterval(function() {
 	$('.slider-box').attr('data-index', ++sliderBoxIndex % 3);
 }, 3000);
 
-function tabBoxInit() {
+function TabBoxInit() {
     $('.tab-head > ul > li').click(function() {
         let $this = $(this);
         let thisIndex = $this.index();
@@ -20,4 +20,17 @@ function tabBoxInit() {
     })
 }
 
-tabBoxInit();
+TabBoxInit();
+
+function Popup__init() {
+    $('.tab-box > .tab-body > ul > li:first-child').click(function() {
+        $('.popup').addClass('active');
+        console.log("dd")
+    });
+
+    $('.popup, .popup-foot .close-btn').click(function() {
+        $('.popup').removeClass('active');
+    })
+}
+
+Popup__init();
