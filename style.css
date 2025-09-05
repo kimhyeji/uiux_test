@@ -266,3 +266,20 @@ img {
 	display: block;
 	height: 100%;
 }
+
+/* 팝업창 구현 시작 */
+.popup {
+	position: fixed;
+	inset: 0;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, .3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup-content {
+	min-height: 400px;
+	width: 400px;
+	background-color: white;
+}
