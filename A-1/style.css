@@ -333,5 +333,34 @@ img {
 	font-weight: bold;
 	background-color: #dfdfdf;
 }
-
 /* 팝업창 구현 끝 */
+
+footer {
+	height: 100px;
+}
+
+footer > .con {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: slateblue;
+}
+
+footer .logo > img {
+	filter: grayscale(100%);
+	border: 1px solid red;
+	outline: 1px solid red;
+}
+
+.ft-middle .ft-copyright > p{
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: white;
+}
+
+.ft-right .ft-sns > ul > li > a {
+	display: block;
+	padding: 0 1rem;
+	font-size: 1.3rem;
+	color: white;
+}
