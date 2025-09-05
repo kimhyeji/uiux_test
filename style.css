@@ -6,12 +6,11 @@
 	font-weight: 400;
 	font-style: normal;
 }
-
-
 /* 노말라이즈 */
 html > body {
 	font-family: "Pretendard-Regular";
 	color: #333;
+	text-underline-position: under;
 }
 
 body, ul, li {
@@ -58,6 +57,10 @@ img {
 
 .flex-1 {
 	flex: 1 0 0;
+}
+
+.flex-grow {
+	flex-grow: 1;
 }
 
 .ml-auto {
@@ -279,7 +282,52 @@ img {
 }
 
 .popup-content {
-	min-height: 400px;
-	width: 400px;
+	min-height: 500px;
+	max-width: 400px;
 	background-color: white;
 }
+
+.popup-head .popup-title {
+	font-size: 1.5rem;
+	padding: 10px;
+}
+
+.popup-body {
+	padding: 10px;
+	position: relative;
+}
+
+.popup-body::before,
+.popup-body::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 96%;
+	height: 1px;
+	background-color: black;
+}
+
+.popup-body::before {
+	top: 0;
+}
+
+.popup-body::after {
+	bottom: 0;
+}
+
+.popup-foot {
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.close-btn {
+	cursor: pointer;
+	border: 2px solid black;
+	padding: 10px 20px;
+	font-weight: bold;
+	background-color: #dfdfdf;
+}
+
+/* 팝업창 구현 끝 */
