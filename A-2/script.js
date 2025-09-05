@@ -1,3 +1,16 @@
+function HeaderMenuInit() {
+    $('.menu-box > ul').hover(
+        () => {
+            $('.top-bar > .con').addClass('active');
+        },
+        () => {
+            $('.top-bar > .con').removeClass('active');
+        }
+    )
+}
+
+HeaderMenuInit();
+
 function SliderInit() {
     let sliderBoxIndex = 0;
 
